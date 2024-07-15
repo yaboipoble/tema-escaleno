@@ -30,8 +30,6 @@
 </section>
 </header><!-- .entry-header -->
 
-				<div class="container-fluid p-0">
-									<div class="row proyectos-section">
 					<?php
 
 $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
@@ -41,12 +39,14 @@ $args = array(
     'posts_per_page' => 4,
     'paged' => $paged,
 	'orderby'			=> 'date',
-	'order'				=> 'DESC'
+	'order'				=> 'ASC'
 );
 /*Loop para traer publicaciones*/
 $loop = new WP_Query( $args );
 if ( $loop->have_posts() ) {
     while ( $loop->have_posts() ) : $loop->the_post();?>
+	<div class="container-fluid p-0 container-proyectos">
+	<div class="row proyectos-section">
 		<div class="container">
 		<div class="row"> 
 				<div class="col-12 col-md-6">
@@ -55,13 +55,16 @@ if ( $loop->have_posts() ) {
 				<a href="<?php the_permalink(); ?>" class="btn btn-primary">Más detalles</a>
 			</div>
 			<div class="col-12 col-md-6">
-				<p>
-					aquí irá la imagen
-				</p>
+				<?php 
+		echo the_post_thumbnail();
+					?>	
 			</div>
 										</div>									
 		</div>
 	
+	</div>
+	</div>
+
         <?php endwhile;
 
       $total_pages = $loop->max_num_pages;
@@ -69,10 +72,6 @@ if ( $loop->have_posts() ) {
     if ($total_pages > 1){
 
         $current_page = max(1, get_query_var('paged'));?>
-
-	</div>
-	</div>
-
         <!-- Paginación -->
         <div id="pagination" class="col-12 py-5 wow fadeInUp d-flex align-items-center justify-content-center">
 
