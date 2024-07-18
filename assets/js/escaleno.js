@@ -5,7 +5,7 @@ $(window).scroll(function () {
  if($(this).scrollTop() > 100){
 	 $('#masthead').addClass('sticky-top').css({'top': '-50px', '-webkit-box-shadow': '0px 6px 10px 2px rgba(0,0,0,0.46)', 'box-shadow': '0px 6px 10px 2px rgba(0,0,0,0.46)'}).animate({'top': '0px'}, 500);
  }else{
- $('#masthead').removeClass('sticky-top'),css({'-webkit-box-shadow': '', 'box-shadow': ''});
+ $('#masthead').removeClass('sticky-top').css({'-webkit-box-shadow': '', 'box-shadow': ''});
  }
 });
 //Carrusel proyectos/inicio	
