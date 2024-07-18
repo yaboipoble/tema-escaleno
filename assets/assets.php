@@ -35,20 +35,12 @@ function mis_script() {
 // Register the script like this for a theme:
 wp_register_script('bootstrap-script', get_bloginfo('template_directory') .'/assets/js/bootstrap.min.js', array('jquery'), '1', true);
 wp_register_script('scripts-escaleno', get_bloginfo('template_directory') . '/assets/js/escaleno.js', array('jquery'), '1', true );
-wp_register_script('waypoints', get_bloginfo('template_directory') . '/assets/js/jquery.waypoints.min.js', array('jquery'), '1', true );
-wp_register_script('masonry', get_bloginfo('template_directory') . '/assets/js/masonry.pkgd.min.js', array('jquery'), '1', true );
-wp_register_script('marquee', get_bloginfo('template_directory') . '/assets/js/jquery.marquee.min.js', array('jquery'), '1', true );
 wp_register_script('slick', get_bloginfo('template_directory') . '/assets/js/slick.min.js', array('jquery'), '1', true );
-wp_register_script('cb-slideheader', get_bloginfo('template_directory') . '/assets/js/jquery.cbslideheader.min.js', array('jquery'), '1', true );
 			
 /*encolamos los JS*/
 wp_enqueue_script('bootstrap-script', array('jquery'), true);
-wp_enqueue_script('scripts-poble', array('jquery'), true);
-wp_enqueue_script('waypoints', array('jquery'), true);
-wp_enqueue_script('masonry', array('jquery'), true);
+wp_enqueue_script('scripts-escaleno', array('jquery'), true);
 wp_enqueue_script('slick', array('jquery'), true);
-wp_enqueue_script('marquee', array('jquery'), true);
-wp_enqueue_script('cb-slideheader', array('jquery'), true);
 		 }
 	
 	}
