@@ -4,7 +4,6 @@
 
 function mis_estilos() {
 	
-	wp_register_style('estilos-header', get_template_directory_uri() . '/assets/css/header.css');
 	wp_register_style('estilos-main', get_template_directory_uri() . '/assets/css/main.css');
 	wp_register_style('bootstrap', get_template_directory_uri() . '/assets/css/bootstrap.min.css');
 	wp_register_style('slick', get_template_directory_uri() . '/assets/css/slick.css');
@@ -35,7 +34,7 @@ function mis_script() {
  
 // Register the script like this for a theme:
 wp_register_script('bootstrap-script', get_bloginfo('template_directory') .'/assets/js/bootstrap.min.js', array('jquery'), '1', true);
-wp_register_script('scripts-poble', get_bloginfo('template_directory') . '/assets/js/poble.js', array('jquery'), '1', true );
+wp_register_script('scripts-escaleno', get_bloginfo('template_directory') . '/assets/js/escaleno.js', array('jquery'), '1', true );
 wp_register_script('waypoints', get_bloginfo('template_directory') . '/assets/js/jquery.waypoints.min.js', array('jquery'), '1', true );
 wp_register_script('masonry', get_bloginfo('template_directory') . '/assets/js/masonry.pkgd.min.js', array('jquery'), '1', true );
 wp_register_script('marquee', get_bloginfo('template_directory') . '/assets/js/jquery.marquee.min.js', array('jquery'), '1', true );
