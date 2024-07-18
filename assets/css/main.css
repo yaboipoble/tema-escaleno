@@ -1,4 +1,3 @@
-/*Fuentes usadas: IBM Plex Sans Condensed (textos, títulos) y IBM Plex Mono (textos de fondo), importadas desde Google Fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
 /*Estilos generales*/
@@ -251,152 +250,9 @@ a.link-home{
 	background-color: transparent;
 }
 
-/*Página proyectos*/
-
-.head-proyectos-2022{
-	background-color: #248B6F;
-	height: 40vh;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	color: var(--pistacho);
-	transition: 0.2s ease;
-}
-
-
-.head-proyectos-2021{
-	background-color: #005F45;
-	height: 40vh;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	color: var(--pistacho);
-	transition: 0.2s ease;
-}
-
-.head-proyectos-2020{
-	background-color: #00351F;
-	height: 40vh;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	color: var(--pistacho);
-	transition: 0.2s ease;
-}
-
-.head-proyectos-2020 h2, .head-proyectos-2021 h2, .head-proyectos-2022 h2{
-	font-size: 9.375rem;
-	font-family: 'IBM Plex Mono', monospace;
-	 background: linear-gradient(270deg, #4ed5b2, #c2ffea, #0ff0a2, #cbffed);
-    background-size: 200% auto;
-  color: #000;
-  background-clip: text;
-  text-fill-color: transparent;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  
-  animation: shine 0.2s linear infinite;
-  @keyframes shine {
-    to {
-      background-position: 200% center;
-    }
-  }
-}
-
-.page-template-index-proyectos .bod-block-popup, .single-proyecto .bod-block-popup{
-	background-color: var(--menta)!important;
-}
-
-#seccion-lista-2020, #seccion-lista-2021, #seccion-lista-2022{
-	display: none;
-}
-
-.head-proyectos-2022:hover, .head-proyectos-2021:hover,
-.head-proyectos-2020:hover{
-	background-color: mediumseagreen;
-}
-
-
-.page-template-index-proyectos .card .proyecto-overlay{
-	border-radius: 20px;
-	transition: ease 0.3s;
-	background-color: rgba(138, 235, 202, 1);
-}
-
-.page-template-index-proyectos .card:hover .proyecto-overlay{
-	background-color: rgba(138, 235, 202, 0.9);
-}
-
-.page-template-index-proyectos a.link-home{
-	color: var(--pistacho);
-	text-decoration: none;
-}
-
-.page-template-index-proyectos .bg-formulario-footer, .single-proyecto .bg-formulario-footer{
-	background-color:  var(--menta);
-}
-
-.page-template-index-proyectos .card{
-	background-color:  var(--menta);
-}
-
-.page-template-index-proyectos .bg-proyecto-card a{
-color: var(--pistacho);
-}
-
-.page-template-index-proyectos .wp-block-social-links:not(.is-style-logos-only) .wp-social-link-behance,  .page-template-index-proyectos .wp-block-social-links:not(.is-style-logos-only) .wp-social-link-linkedin, .page-template-index-proyectos .wp-block-social-links:not(.is-style-logos-only) .wp-social-link-instagram, .page-template-index-proyectos .wp-block-social-links:not(.is-style-logos-only) .wp-social-link-twitter{
-    background-color: transparent;
-    color:  var(--pistacho);
-}
-
-.page-template-index-proyectos .header-home, .single-proyecto .header-home{
-	background-color: var(--menta)!important;
-}
-
-/*Página individual de proyectos*/
-
-.proyecto-categoria{
-	font-weight: bold;
-	text-transform: uppercase;
-	letter-spacing: 2px;
-}
-
-.proyecto-colores{
-	width: 2.5rem;
-	height: 2.5rem;
-	border-radius: 20px;
-}
-
-.bg-textblock-detalle{
-	background-color: var(--menta);
-}
-
-.single-proyecto .bg-textblock, .single-proyecto #footer-Content, .page-template-index-proyectos #footer-Content{
-	color: var(--pistacho);
-}
-
-.bg-textblock-reverse{
-	color: var(--azul);
-	background-color:  var(--durazno);
-}
-
-.single-proyecto .wp-block-social-links:not(.is-style-logos-only) .wp-social-link-behance,  .single-proyecto .wp-block-social-links:not(.is-style-logos-only) .wp-social-link-linkedin, .single-proyecto .wp-block-social-links:not(.is-style-logos-only) .wp-social-link-instagram, .single-proyecto .wp-block-social-links:not(.is-style-logos-only) .wp-social-link-twitter{
-    background-color: transparent;
-    color:  var(--pistacho);
-}
-
-.single-proyecto .wp-block-bod-modal-block .bod-btn:hover, .page-template-index-proyectos .wp-block-bod-modal-block .bod-btn:hover {
-	color: var(--menta)!important;
-	background-color: var(--azul)!important;
-}
-
-.slick-prev:before, .slick-next:before{
-	color: var(--azul)!important;
-}
 
 .galeria-border img{
 	border: 10px solid;
-	border-radius: 20px;
 }
 
 .slick-dots{
@@ -635,3 +491,108 @@ input[type="submit"]{
       transform: translateY(-2000px);
     }
   }
+
+
+  .titulo-inicio{
+	font-size: 55px;
+}
+
+input[type=submit]:not(:disabled){
+	color: white;
+    background-color: #00CCFF;
+    cursor: pointer;
+    display: inline-block;
+    transition: 0.2s ease;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 0.625rem 3.125rem;
+    border-radius: 26px;
+	  border: 0;
+}
+
+input[type=submit]:not(:disabled):hover{
+	color: var(--azul);
+	background-color: white;
+}
+
+#footer-Content{
+	color: white;
+	background-color: var(--azul);
+}
+
+#footer-contacto i{
+	font-size: 40px!important;
+	text-align: center;
+}
+
+#features i{
+	font-size: 120px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	text-align: center;
+}
+
+.proyecto .header-home{
+	background-color: var(--azul)!important;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.page-id-238 i{
+	font-size: 48px;
+}
+
+.form-pag-contacto{
+	padding: 50px;
+}
+
+.numero{
+	color: white;
+	background-color: var(--azul)!important;
+	padding: 10px;
+	border-radius: 50px;
+}
+
+.proyectos-section{
+	margin: 0;
+}
+
+.container-proyectos:nth-child(even){
+	color: white!important;
+	background-color: var(--azul);
+}
+
+.container-proyectos:nth-child(odd)>.proyectos-section>.container>.row{
+	flex-direction: row-reverse;
+}
+
+.proyectos-section>.container{
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.galeria-individual{
+	height: 500px;
+}
+
+.texto-blog{
+	background: rgba(27,6,87,0.7);
+	height: 500px;
+	color: white;
+}
+
+.texto-blog h3{
+	font-size: 50px;
+}
+
+.navbar-dark .navbar-nav .active>.nav-link{
+	border-bottom: 2px solid white!important;
+}
+
+.nav-link{
+	font-family: 'Outfit', sans-serif;
+}
+
+.wpcf7-file{
+	color: white;
+}
